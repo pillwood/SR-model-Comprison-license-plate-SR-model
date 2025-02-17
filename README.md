@@ -1,5 +1,5 @@
-# Super-Resolution-model-Comparison
-4종류의 SR model의 비교 분석 미니 프로젝트
+# SR-model-Comprison-license-plate-SR-model
+## 4종류의 SR model의 비교 분석 미니 프로젝트
 
 <br/>
 학습 진행 모델 : 
@@ -45,9 +45,11 @@ DF2K모델을 통해 학습을 진행 :
 <br/><br/><br/>
 결과적으로 DRCT모델이 학습 시간 대비 가장 성능이 좋다.
 
+
+## License Plate Model
 <br/><br/><br/>
 그럼 차량 번호판 데이터를 학습하며 L2 loss를 사용해 노이즈와 아티팩트를 제거하지 않고
-L1 loss만을 사용하여 학습한다면 번호판 복원에 대해 더 좋은 성능을 낼 수 있지 않을까
+L1 loss만을 사용하여 학습한다면 번호판 복원에 대해 더 좋은 성능을 낼 수 있지 않을까?
 <br/><br/>
 
 학습 진행 데이터 : 
