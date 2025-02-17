@@ -70,7 +70,7 @@ python 3.12.7
 pytorch 2.5.1 + cu118버전 사용
 <br/>
 <br/>
-||pip install -r requirements.txt
+pip install -r requirements.txt
 <br/>
 conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1  pytorch-cuda=11.8 -c pytorch -c nvidia
 <br/>
