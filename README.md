@@ -70,18 +70,21 @@ https://drive.google.com/file/d/1s9SDNT34rCJJoocrjyreM_eAqDzKYDAk/view?usp=shari
 
 
 <br/>
+
 ![LR image](https://github.com/user-attachments/assets/85c1aaa6-ff30-40a0-8836-15239e914587)
 
 <br/>
 <원본 저해상도 이미지>
 
 <br/>
+
 ![DRCT](https://github.com/user-attachments/assets/e66ca762-aee3-4369-82ff-11268f8134fe)
 
 <br/>
 <DRCT로 복원한 이미지>
 
 <br/>
+
 ![DRCT_LP](https://github.com/user-attachments/assets/242da43f-0f03-41f8-b33f-d8ed04757e90)
 
 <br/>
