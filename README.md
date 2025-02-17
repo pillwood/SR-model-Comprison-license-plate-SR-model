@@ -100,3 +100,32 @@ conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1  pytorch-cuda
 <br/>
 
 <DRCT_LP로 복원한 이미지>
+<br/>
+<br/>
+<br/>
+<br/>
+
+##추가적으로 PerceptualLoss 사용한 모델은?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
