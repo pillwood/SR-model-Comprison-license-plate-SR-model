@@ -66,6 +66,11 @@ https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=
 https://drive.google.com/file/d/1s9SDNT34rCJJoocrjyreM_eAqDzKYDAk/view?usp=sharing
 <br/>에서 다운로드 가능합니다.
 <br/>
+python 3.12.7
+pytorch 2.5.1 + cu118버전 사용
+<br/>
+pip install -r requirements.txt
+conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1  pytorch-cuda=11.8 -c pytorch -c nvidia
 <br/>
 <br/>
 이미지 출처 : https://www.ohmynews.com/NWS_Web/Mobile/img_pg.aspx?CNTN_CD=IE003048022
@@ -83,6 +88,7 @@ https://drive.google.com/file/d/1s9SDNT34rCJJoocrjyreM_eAqDzKYDAk/view?usp=shari
 ![DRCT](https://github.com/user-attachments/assets/e66ca762-aee3-4369-82ff-11268f8134fe)
 
 <br/>
+
 <DRCT로 복원한 이미지>
 
 <br/>
@@ -90,4 +96,5 @@ https://drive.google.com/file/d/1s9SDNT34rCJJoocrjyreM_eAqDzKYDAk/view?usp=shari
 ![DRCT_LP](https://github.com/user-attachments/assets/242da43f-0f03-41f8-b33f-d8ed04757e90)
 
 <br/>
+
 <DRCT_LP로 복원한 이미지>
