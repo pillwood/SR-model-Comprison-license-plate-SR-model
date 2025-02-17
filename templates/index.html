@@ -1,62 +1,94 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Resolution Service</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        .tooltip {
-            position: relative;
-            display: inline-block;
-        }
-        .tooltip .tooltip-text {
-            visibility: hidden;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            padding: 5px;
-            border-radius: 5px;
-            position: absolute;
-            bottom: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            white-space: nowrap;
-        }
-        .tooltip:hover .tooltip-text {
-            visibility: visible;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Super Resolution Service</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+    }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .custom-tooltip {
+      position: absolute;
+      top: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+      font-size: 0.875rem;
+      display: none;
+    }
+    .position-relative:hover .custom-tooltip {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <h1>Upload an image for Super Resolution</h1>
-    <form method="post" enctype="multipart/form-data">
-        <label for="model_type">Select Model:</label>
-        <div class="tooltip">
-            <select name="model_type" id="model_type">
-                <option value="DRCT_x4">DRCT_x4 (General)</option>
-                <option value="DRCT_x4_CN">DRCT_x4_CN (License Plate)</option>
-            </select>
-            <span class="tooltip-text" id="model-description">Choose a model</span>
+  <div class="overlay d-flex align-items-center">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card p-4">
+            <h1 class="card-title text-center mb-3">Image Reconstruction Using Super Resolution Model</h1>
+            <p class="text-center text-muted mb-4">이미지를 업로드하고 모델을 선택하면 초해상도 복원이 진행됩니다.</p>
+            <form method="post" enctype="multipart/form-data">
+              <!-- 모델 선택 -->
+              <div class="mb-3 position-relative">
+                <label for="model_type" class="form-label">Select Model:</label>
+                <select name="model_type" id="model_type" class="form-select">
+                  <option value="DRCT_x4">DRCT_x4 (General)</option>
+                  <option value="DRCT_x4_CN">DRCT_x4_CN (License Plate)</option>
+                </select>
+                <!-- 커스텀 툴팁 -->
+                <div class="custom-tooltip" id="model-description">Choose a model</div>
+              </div>
+              <!-- 이미지 업로드 -->
+              <div class="mb-3">
+                <label for="file" class="form-label">Upload Image:</label>
+                <input type="file" name="file" id="file" class="form-control">
+              </div>
+              <!-- 업로드 및 Enhance 버튼 -->
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg shadow-sm">Upload &amp; Enhance</button>
+              </div>
+            </form>
+          </div>
+          <div class="text-center mt-3">
+            <small class="text-muted">Powered by Super Resolution Technology</small>
+          </div>
         </div>
-        <br><br>
-        <input type="file" name="file">
-        <input type="submit" value="Upload">
-    </form>
+      </div>
+    </div>
+  </div>
 
-    <script>
-        document.getElementById("model_type").addEventListener("mouseover", function() {
-            var desc = {
-                "DRCT_x4": "General super-resolution model",
-                "DRCT_x4_CN": "Optimized for license plate images"
-            };
-            var selected = this.value;
-            document.getElementById("model-description").innerText = desc[selected];
-        });
-    </script>
+  <!-- Bootstrap JS Bundle (Popper 포함) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // 모델 선택 시 커스텀 툴팁 내용 업데이트
+    document.getElementById("model_type").addEventListener("mouseover", function() {
+      const desc = {
+        "DRCT_x4": "기본 DRCT 초해상도 모델",
+        "DRCT_x4_CN": "차량 번호판 복원에 특화된 모델"
+      };
+      const selected = this.value;
+      document.getElementById("model-description").innerText = desc[selected];
+    });
+  </script>
 </body>
 </html>
