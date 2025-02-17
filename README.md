@@ -41,6 +41,10 @@ https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=
 이미지 사이즈가 너무 작은 관계로 종 횡 방향 크기가 64미만인 이미지는 제거후 사용. 
 (script 폴더 내부에 이미지 전처리 스크립트 작성)
 
+학습된 모델은 
+https://drive.google.com/file/d/1s9SDNT34rCJJoocrjyreM_eAqDzKYDAk/view?usp=sharing
+에서 다운로드 가능합니다.
+
 
 
 이미지 출처 : https://www.ohmynews.com/NWS_Web/Mobile/img_pg.aspx?CNTN_CD=IE003048022
