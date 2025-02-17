@@ -43,6 +43,9 @@ https://aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=
 
 
 
+이미지 출처 : https://www.ohmynews.com/NWS_Web/Mobile/img_pg.aspx?CNTN_CD=IE003048022
+
+
 
 ![LR image](https://github.com/user-attachments/assets/85c1aaa6-ff30-40a0-8836-15239e914587)
 
